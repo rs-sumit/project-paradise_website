@@ -1,0 +1,61 @@
+<% layout("layout/boilerplate") %>
+
+    <div class="content offset-2 col-8">
+        <form method="post" class="needs-validation" action="http://localhost:3000/listing/new" enctype="multipart/form-data" novalidate >
+
+            <h1 class="heading"><b>Fill the details of new listing:</b></h1><br>
+
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" name="listing[title]" placeholder="eg-Marina hotel" ID="title" required>
+                <div class="invalid-feedback">invalid title</div>
+                <div class="valid-feedback">look good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" name="listing[description]"
+                    placeholder="eg-3BHK room ,a swimming pool with beautiful garden" id="description"
+                    type="text" required></textarea>
+                    <div class="invalid-feedback">invalid description</div>
+                    <div class="valid-feedback">look good!</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label class="form-label" for="price" for="price">Price</label>
+                    <input class="form-control" name="listing[price]" placeholder="eg-1,250" type="text" id="price" required>
+                    <div class="invalid-feedback">invalid price</div>
+                    <div class="valid-feedback">look good!</div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label class="form-label" for="coutnry">Country</label>
+                    <input class="form-control" name="listing[country]" placeholder="eg-India" type="text" id="country" required>
+                    <div class="invalid-feedback">invalid country name</div>
+                    <div class="valid-feedback">look good!</div>
+                </div>    
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" name="listing[location]" placeholder="eg-near High court,new Delhi" type="text"
+                    id="location" required>
+                <div class="invalid-feedback">invalid location</div>
+                <div class="valid-feedback">look good!</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="url">Upload your image</label>
+                <input class="form-control" name="listing[image][url]" placeholder="eg-http://marinahotal/balcony.jpg" type="file"
+                    id="url">
+            </div>
+        
+
+            <div class="mb-3">
+                <label class="form-label" for="imagename">Image Title</label>
+                <input class="form-control" name="listing[image][imageName]" placeholder="eg-marina hotal balcony"
+                    id="imagename" type="text">
+            </div>
+
+            <button class="btn btn-success">Done</button>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+    

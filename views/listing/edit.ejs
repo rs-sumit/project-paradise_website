@@ -1,0 +1,58 @@
+<% layout("layout/boilerplate") %>
+
+    <div class="content offset-2 col-8" style=" padding-top:5.5rem;
+    padding-left:.5rem;
+    padding-right: .5rem;">
+        <form method="post" class="needs-validation"
+            action="http://localhost:3000/listing/<%= id._id %>/edit?_method=PUT" enctype="multipart/form-data" novalidate>
+
+            <h1 class="edit-heading"><b>Edit Your listing:</b></h1><br>
+
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" name="listing[title]" id="title" value="<%=id.title %>" type="text" required>
+                <div class="invalid-feedback">Invalid title</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" name="listing[description]" id="description" type="text"
+                    required><%=id.description %></textarea>
+                <div class="invalid-feedback">invalid description</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label class="form-label" for="price">Price</label>
+                    <input class="form-control" name="listing[price]" id="price" value="<%=id.price %>" type="number" required>
+                    <div class="invalid-feedback">invalid price</div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label class="form-label" for="country">Country</label>
+                    <input class="form-control" name="listing[country]" id="country" value="<%=id.country %>" type="text"
+                        required>
+                    <div class="invalid-feedback">Invalid country name</div>
+                </div>
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" name="listing[location]" id="location" value="<%=id.location %>" type="text"
+                    required>
+                <div class="invalid-feedback">Invalid location</div>
+            </div>
+
+            <div >
+                <img id="url" width="250px" src="<%=originalUrl%>">
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label" for="url">Change Listing image</label>
+                <input class="form-control" name="listing[image][url]" id="url" type="file">
+            </div>
+    </div>
+
+    <button class="btn" style="background-color:goldenrod;">update</button>
+
+    </form>
+    </div>
+    <script src="./js/script.js"></script>

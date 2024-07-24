@@ -1,0 +1,116 @@
+
+body{
+    font-family:"Plus Jakarta Sans",ExtraBold 800 !important;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+
+.navbar{
+    height:5rem !important;
+    background-color: white;
+    
+}
+.navbar-nav a{
+    text-align: center;
+}
+
+
+.navbar-brand{
+    color:#fe424d !important;
+}
+.footer{
+    background-color: rgb(210, 213, 216);
+}
+.footer div{
+    /* height:2rem; */
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-name p{
+    vertical-align: middle;
+}
+.footer i {
+    margin:5px;
+}
+.footer a{
+    margin:5px;
+    text-decoration:none ;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+/* .content{
+    padding-top:5.5rem;
+    padding-left:.5rem;
+    padding-right: .5rem;
+} */
+
+.card-img-top{
+    height:20rem;
+   
+}
+
+.card-img-overlay:hover{
+    background-color:white;
+    opacity:.2;
+}
+
+.card{
+    margin:10px;
+}
+.btn{
+    margin-bottom:40px;
+}
+.heading{
+    text-align: center;
+}
+.card-img{
+    border-radius:20px;
+    /* height:25rem; */
+}
+.show{
+    border:none;
+}
+.alert{
+    display:flex;
+    justify-content: center;
+    margin-top:3rem;
+}
+.collapse{
+    background-color:white;
+    padding-left:1rem;
+
+}
+.alert{
+    margin-top:16px !important;
+}
+#map{
+    height:500px;
+    width: 100%;
+    margin:20px;
+    border:3px solid green;
+    border-radius: 20px;
+}
+
+.searchbar {
+    height: 2.5rem;
+}
+
+.search {
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: 25px;
+}
+
+.search-btn {
+    background-color: #fe424d;
+    border-radius: 25px;
+}
