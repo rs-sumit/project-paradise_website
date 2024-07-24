@@ -1,7 +1,7 @@
 <% layout("layout/boilerplate.ejs"); %>
 <div class="col-6 offset-3">
     <h1>SignIn to Paradise</h1>
-    <form class="needs-validation" method="post" action="http://localhost:3000/signin" novalidate >
+    <form class="needs-validation" method="post" action="/signin" novalidate >
         <div>
             <label class="form-label" for="username">Username</label>
             <input name="username" class="form-control" id="username" type="text" required>
@@ -17,7 +17,7 @@
         <div class="row ">
             <div class="btn-group">
                 <button class="btn btn-primary col-6">Sign In</button>
-                <a class="btn btn-outline-primary col-6" href="http://localhost:3000/signup">Sign Up</a>
+                <a class="btn btn-outline-primary col-6" href="/signup">Sign Up</a>
             </div>
         </div>    
     </form>
