@@ -91,6 +91,11 @@ app.use("/listing", listingroute);
 //review
 app.use("/listing/:_id/review", reviewroute);
 
+//home page
+app.get("/",(req,res)=>{
+  console.log("This is home page.");
+  res.redirect("/listing");
+})
 
 //terms and conditions
 app.get("/terms",(req,res)=>{
