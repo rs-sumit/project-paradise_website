@@ -5,7 +5,7 @@
         
         <% for(let Listing of Listings){ %>
             
-            <a class="card-link" href="http://localhost:3000/listing/<%= Listing._id %>">
+            <a class="card-link" href="/listing/<%= Listing._id %>">
                 
                 <div class="card " style="width:100%;">
                     <img src=<%=Listing.image.url%> class="card-img-top" alt="Listing image">
